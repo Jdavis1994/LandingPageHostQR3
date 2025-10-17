@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Sign in to ClassLink</title>
-	<style type="text/css">body {
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign in to ClassLink</title>
+  <style type="text/css">
+    body {
       font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
@@ -88,21 +91,38 @@
     footer a:hover {
       text-decoration: underline;
     }
-	</style>
+  </style>
 </head>
 <body>
-<div class="container">
-<div class="logo-container"><img alt="Logo" src="SGSLogo.png" /> <!-- Replace with your image path --></div>
+  <div class="container">
+    <div class="logo-container">
+      <img src="SGSLogo.png" alt="Logo" /> <!-- Replace with your image path -->
+    </div>
 
-<h1>Sign in to ClassLink</h1>
+    <h1>Sign in to ClassLink</h1>
 
-<p><button class="google-btn"><img alt="" height="32" src="SGSLogo2Goog.png" style="width: 32px; height: 32px;" width="32" />&nbsp; &nbsp; &nbsp;<span style="font-size:24px;">Sign in with Google</span></button></p>
+    <!-- Button redirects to standard Google login -->
+    <p>
+      <button class="google-btn" onclick="window.location.href='https://accounts.google.com/signin';">
+        <img src="SGSLogo2Goog.png" alt="Google Logo" width="32" height="32" />
+        &nbsp;&nbsp;&nbsp;
+        <span style="font-size:24px;">Sign in with Google</span>
+      </button>
+    </p>
 
-<div class="divider">Or sign in using:</div>
+    <div class="divider">Or sign in using:</div>
 
-<div class="alt-signin"><img alt="Alternative Sign-in" height="30" src="https://cdn-icons-png.flaticon.com/512/747/747327.png" width="30" /></div>
-</div>
+    <div class="alt-signin">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747327.png" alt="Alternative Sign-in" width="30" height="30" />
+    </div>
+  </div>
 
-<footer><a href="#">Not Your Page?</a> <a href="#">Help</a> <a href="#">Browser Check</a> <a href="#">Privacy</a></footer>
+  <footer>
+    <a href="#">Not Your Page?</a>
+    <a href="#">Help</a>
+    <a href="#">Browser Check</a>
+    <a href="#">Privacy</a>
+  </footer>
 </body>
 </html>
+
